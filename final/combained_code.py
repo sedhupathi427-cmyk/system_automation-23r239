@@ -12,8 +12,9 @@ from sklearn.model_selection import train_test_split
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_FILE = BASE_DIR / "day2" / "day2_sample.csv"
-MODEL_FILE = BASE_DIR / "day2" / "predictive_maintenance_model.pkl"
+PROJECT_DIR = BASE_DIR.parent
+DATA_FILE = PROJECT_DIR / "day2" / "day2_sample.csv"
+MODEL_FILE = PROJECT_DIR / "day2" / "predictive_maintenance_model.pkl"
 RESULTS_FILE = BASE_DIR / "combined_live_results.csv"
 FEATURES = ["temperature", "pressure", "vibration", "rpm", "current"]
 INTERVAL_SECONDS = 1.0
